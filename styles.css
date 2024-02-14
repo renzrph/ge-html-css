@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #153240;
+  --secondary-color: #01f5ff;
+  --tertiary-color: #0e202a;
+  --white: #ffffff;
+  --gray: #808080;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--primary-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  padding: 6rem 3rem;
+  border: 3px solid var(--tertiary-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  position: relative;
+}
+
+input {
+  background-color: var(--tertiary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  padding: 10px 8px;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+input[type="password"] {
+  color: var(--white);
+}
+
+input[placeholder="Password"] {
+  padding-left: 32px;
+}
+
+.bi-lock {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--white);
+}
+
+.bi-eye-slash-fill {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray);
+  cursor: pointer;
+}
+
+a {
+  color: var(--secondary-color);
+  font-size: 0.8rem;
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+}
